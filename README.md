@@ -1,1 +1,1 @@
-# Java-Scrit
+# Java-Script
