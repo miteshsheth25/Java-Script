@@ -11,15 +11,30 @@
     <script>
 
         function result(){
-            num1 = document.getElementById('number1').value;
-            num2 = document.getElementById('number2').value;
+            num11 = document.getElementById('number1').value;
+            num22 = document.getElementById('number2').value;
+            num33 = document.getElementById('number3').value;
 
-            if(num1 < num2){
-                alert('Number 1 is Smallest');
-            }
-            else{
-                alert('Number 2 is Smallest');
+            num1 = parseInt(num11);
+            num2 = parseInt(num22);
+            num3 = parseInt(num33);
+            
+
+
+            print = document.getElementById('print_result');
+
+
+            if(num1 < num2 && num1 < num3){
+
+                print.innerHTML = num1;
+
+            }else if(num2 < num1 && num2 < num3){
+
+                print.innerHTML = num2;
+            }else{
+                print.innerHTML = num3;
             }    
+
 
         }
 
@@ -50,11 +65,25 @@
                     <input type="text" class="form-control" id="number2" placeholder="Enter number 2">
                 </div>
 
+                <div class=class="form-label">Number 3</label>
+                    <input type="text" class="form-control" id="number3" placeholder="Enter number 3">
+                </div>
+
+
                 <div class="m-2">
                     <button class="btn btn-primary" onclick="result()">Result</button>
                 </div>
             </div>
         </div>
+
+        <div class="card m-5">
+            <div class="card-body">
+                <div class="alert alert-danger">
+                    <h1>The Smallest Number is <span class="text-primary" id="print_result"></span></h1>
+                </div>
+            </div>
+          </div>
+
     </div>
 
 
