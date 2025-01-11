@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .outer_div{
+            height: 560px;
+            width: 560px;
+            border: solid 1px black;
+            margin: auto;
+        }
+        .row{
+            height: 70px;
+            width: 560px;
+            border: solid 1px black;
+        }
+        .col{
+            height: 70px;
+            width: 70px;
+            background-color: rgb(2, 2, 2);
+            float: left;
+        }
+        .color{
+            background-color: white;
+        }
+    </style>
+    
+    
+    <script>
+
+        function print_box(){
+           
+
+            let i = 1;
+
+            while(i<=8){
+            
+                if(i%2==0){
+                    document.write('<div class="col"></div>')
+                }else{
+                    document.write('<div class="col color"></div>')
+                }
+
+                i++;  
+            
+            }
+        }
+        function print_box1(){
+           
+
+            let i = 1;
+
+            while(i<=8){
+            
+                if(i%2==1){
+                    document.write('<div class="col"></div>')
+                }else{
+                    document.write('<div class="col color"></div>')
+                }
+
+                i++;  
+            
+            }
+        }
+
+        
+
+
+    </script>
+
+</head>
+<body>
+
+    <div class="outer_div">
+
+        <div class="row">
+            <script>print_box();</script>
+        </div>
+        <div class="row">
+            <script>print_box1();</script>
+        </div>
+        <div class="row">
+            <script>print_box();</script>
+        </div>
+        <div class="row">
+            <script>print_box1();</script>
+        </div>
+        <div class="row">
+            <script>print_box();</script>
+        </div>
+        <div class="row">
+            <script>print_box1();</script>
+        </div>
+        <div class="row">
+            <script>print_box();</script>
+        </div>
+        <div class="row">
+            <script>print_box1();</script>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
