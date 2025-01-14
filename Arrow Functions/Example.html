@@ -9,10 +9,20 @@
 
         function bill(price,gst){
 
-            gst_amount = 
+            gst_amount = price*gst/100
+            total_amount = price + gst_amount
+
+            document.write("<hr> Price : "+price)
+            document.write("<hr> GST : "+gst+"%")
+            document.write("<hr> GST Amount : "+gst_amount)
+            document.write("<hr> Total Amount : "+total_amount)
 
 
         }
+
+
+        bill(1200,18)
+        bill(2500,2)
 
 
     </script>
